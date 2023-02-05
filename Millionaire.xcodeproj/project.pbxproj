@@ -107,8 +107,8 @@
 		54F0F8AB298F94EB006ECBC5 /* Start */ = {
 			isa = PBXGroup;
 			children = (
-				54F0F896298F9230006ECBC5 /* StartViewController.swift */,
-				54F0F8B8298FA6CE006ECBC5 /* StartBrain.swift */,
+				54F30A08298FE8C30083A75C /* Controllers */,
+				54F30A09298FE8CB0083A75C /* Brain */,
 			);
 			path = Start;
 			sourceTree = "<group>";
@@ -136,6 +136,22 @@
 				54F0F8BD298FAA2E006ECBC5 /* GameRules.swift */,
 			);
 			path = GameRules;
+			sourceTree = "<group>";
+		};
+		54F30A08298FE8C30083A75C /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				54F0F896298F9230006ECBC5 /* StartViewController.swift */,
+			);
+			path = Controllers;
+			sourceTree = "<group>";
+		};
+		54F30A09298FE8CB0083A75C /* Brain */ = {
+			isa = PBXGroup;
+			children = (
+				54F0F8B8298FA6CE006ECBC5 /* StartBrain.swift */,
+			);
+			path = Brain;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
