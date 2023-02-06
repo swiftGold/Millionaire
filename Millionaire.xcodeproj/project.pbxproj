@@ -18,6 +18,8 @@
 		54F0F8BB298FA7E1006ECBC5 /* MainGameBrain.swift in Sources */ = {isa = PBXBuildFile; fileRef = 54F0F8BA298FA7E1006ECBC5 /* MainGameBrain.swift */; };
 		54F0F8BE298FAA2E006ECBC5 /* GameRulesController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 54F0F8BD298FAA2E006ECBC5 /* GameRulesController.swift */; };
 		54F0F8C0298FCBE5006ECBC5 /* QuestionsViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 54F0F8BF298FCBE5006ECBC5 /* QuestionsViewModel.swift */; };
+		54F65106299126DF00FF6A73 /* ProgressViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 54F65105299126DF00FF6A73 /* ProgressViewController.swift */; };
+		54F65108299126F100FF6A73 /* LoseViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 54F65107299126F100FF6A73 /* LoseViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -34,6 +36,8 @@
 		54F0F8BA298FA7E1006ECBC5 /* MainGameBrain.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainGameBrain.swift; sourceTree = "<group>"; };
 		54F0F8BD298FAA2E006ECBC5 /* GameRulesController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameRulesController.swift; sourceTree = "<group>"; };
 		54F0F8BF298FCBE5006ECBC5 /* QuestionsViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QuestionsViewModel.swift; sourceTree = "<group>"; };
+		54F65105299126DF00FF6A73 /* ProgressViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProgressViewController.swift; sourceTree = "<group>"; };
+		54F65107299126F100FF6A73 /* LoseViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoseViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -92,6 +96,8 @@
 				54F0F8AB298F94EB006ECBC5 /* Start */,
 				54F0F8AC298F95EA006ECBC5 /* MainGame */,
 				54F0F8BC298FAA0E006ECBC5 /* GameRules */,
+				54F651032991263400FF6A73 /* Progress */,
+				54F65104299126C700FF6A73 /* Lose  */,
 			);
 			path = Modules;
 			sourceTree = "<group>";
@@ -109,7 +115,6 @@
 			children = (
 				54F30A08298FE8C30083A75C /* Controllers */,
 				54F30A0B298FEFC90083A75C /* Views */,
-				54F30A09298FE8CB0083A75C /* Brain */,
 				54F30A0C298FEFD60083A75C /* Models */,
 			);
 			path = Start;
@@ -119,7 +124,6 @@
 			isa = PBXGroup;
 			children = (
 				54F30A0D298FEFEB0083A75C /* Controllers */,
-				54F30A0E298FEFF40083A75C /* Brain */,
 				54F30A0F298FEFF90083A75C /* Views */,
 				54F30A10298FEFFE0083A75C /* Models */,
 			);
@@ -150,14 +154,6 @@
 			path = Controllers;
 			sourceTree = "<group>";
 		};
-		54F30A09298FE8CB0083A75C /* Brain */ = {
-			isa = PBXGroup;
-			children = (
-				54F0F8B8298FA6CE006ECBC5 /* StartBrain.swift */,
-			);
-			path = Brain;
-			sourceTree = "<group>";
-		};
 		54F30A0B298FEFC90083A75C /* Views */ = {
 			isa = PBXGroup;
 			children = (
@@ -168,6 +164,7 @@
 		54F30A0C298FEFD60083A75C /* Models */ = {
 			isa = PBXGroup;
 			children = (
+				54F0F8B8298FA6CE006ECBC5 /* StartBrain.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -180,14 +177,6 @@
 			path = Controllers;
 			sourceTree = "<group>";
 		};
-		54F30A0E298FEFF40083A75C /* Brain */ = {
-			isa = PBXGroup;
-			children = (
-				54F0F8BA298FA7E1006ECBC5 /* MainGameBrain.swift */,
-			);
-			path = Brain;
-			sourceTree = "<group>";
-		};
 		54F30A0F298FEFF90083A75C /* Views */ = {
 			isa = PBXGroup;
 			children = (
@@ -198,6 +187,7 @@
 		54F30A10298FEFFE0083A75C /* Models */ = {
 			isa = PBXGroup;
 			children = (
+				54F0F8BA298FA7E1006ECBC5 /* MainGameBrain.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -206,6 +196,38 @@
 			isa = PBXGroup;
 			children = (
 				54F0F8BD298FAA2E006ECBC5 /* GameRulesController.swift */,
+			);
+			path = Controllers;
+			sourceTree = "<group>";
+		};
+		54F651032991263400FF6A73 /* Progress */ = {
+			isa = PBXGroup;
+			children = (
+				54F6510A2991272000FF6A73 /* Controllers */,
+			);
+			path = Progress;
+			sourceTree = "<group>";
+		};
+		54F65104299126C700FF6A73 /* Lose  */ = {
+			isa = PBXGroup;
+			children = (
+				54F651092991271900FF6A73 /* Controllers */,
+			);
+			path = "Lose ";
+			sourceTree = "<group>";
+		};
+		54F651092991271900FF6A73 /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				54F65107299126F100FF6A73 /* LoseViewController.swift */,
+			);
+			path = Controllers;
+			sourceTree = "<group>";
+		};
+		54F6510A2991272000FF6A73 /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				54F65105299126DF00FF6A73 /* ProgressViewController.swift */,
 			);
 			path = Controllers;
 			sourceTree = "<group>";
@@ -285,6 +307,8 @@
 				54F0F8AE298F95F8006ECBC5 /* MainGameViewController.swift in Sources */,
 				54F0F8BB298FA7E1006ECBC5 /* MainGameBrain.swift in Sources */,
 				54F0F8B9298FA6CE006ECBC5 /* StartBrain.swift in Sources */,
+				54F65106299126DF00FF6A73 /* ProgressViewController.swift in Sources */,
+				54F65108299126F100FF6A73 /* LoseViewController.swift in Sources */,
 				54F0F893298F9230006ECBC5 /* AppDelegate.swift in Sources */,
 				54F0F895298F9230006ECBC5 /* SceneDelegate.swift in Sources */,
 				54F0F8BE298FAA2E006ECBC5 /* GameRulesController.swift in Sources */,
