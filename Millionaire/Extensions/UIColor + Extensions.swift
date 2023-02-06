@@ -8,7 +8,7 @@
 import UIKit
 
 extension UIColor {
-    static let questionButtonBackground = #colorLiteral(red: 0.4078431373, green: 0.4078431373, blue: 0.4078431373, alpha: 1)
+    static let answerButtonBackground = #colorLiteral(red: 0.2588235294, green: 0.4274509804, blue: 0.5450980392, alpha: 1)
     static let registerButtonBackground = #colorLiteral(red: 0.5843137255, green: 0.8352941176, blue: 0.8901960784, alpha: 1)
     static let loseTitleColor = #colorLiteral(red: 0.9647058824, green: 0.3882352941, blue: 0.1411764706, alpha: 1)
     static let playAgainButtonBackground = #colorLiteral(red: 0.2039215686, green: 0.7215686275, blue: 0.2274509804, alpha: 1)

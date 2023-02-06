@@ -1,13 +1,13 @@
 //
-//  GameRulesController.swift
+//  LoseViewController.swift
 //  Millionaire
 //
-//  Created by Сергей Золотухин on 05.02.2023.
+//  Created by Сергей Золотухин on 06.02.2023.
 //
 
 import UIKit
 
-class GameRulesController: UIViewController {
+class LoseViewController: UIViewController {
         
     private let backgroundImageView: UIImageView = {
         let imageView = UIImageView()
@@ -40,7 +40,7 @@ class GameRulesController: UIViewController {
     }
 }
 
-private extension GameRulesController {
+private extension LoseViewController {
     func setupViewController() {
         addSubviews()
         setConstraints()
