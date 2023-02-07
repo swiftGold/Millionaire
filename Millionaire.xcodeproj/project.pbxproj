@@ -17,7 +17,7 @@
 		54F0F8B9298FA6CE006ECBC5 /* StartBrain.swift in Sources */ = {isa = PBXBuildFile; fileRef = 54F0F8B8298FA6CE006ECBC5 /* StartBrain.swift */; };
 		54F0F8BB298FA7E1006ECBC5 /* MainGameBrain.swift in Sources */ = {isa = PBXBuildFile; fileRef = 54F0F8BA298FA7E1006ECBC5 /* MainGameBrain.swift */; };
 		54F0F8BE298FAA2E006ECBC5 /* GameRulesController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 54F0F8BD298FAA2E006ECBC5 /* GameRulesController.swift */; };
-		54F0F8C0298FCBE5006ECBC5 /* QuestionsViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 54F0F8BF298FCBE5006ECBC5 /* QuestionsViewModel.swift */; }
+		54F0F8C0298FCBE5006ECBC5 /* QuestionsViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 54F0F8BF298FCBE5006ECBC5 /* QuestionsViewModel.swift */; };
 		653D1B95299009D500808474 /* Question.swift in Sources */ = {isa = PBXBuildFile; fileRef = 653D1B94299009D500808474 /* Question.swift */; };
 		653D1B9729900A3800808474 /* QuestionBrain.swift in Sources */ = {isa = PBXBuildFile; fileRef = 653D1B9629900A3800808474 /* QuestionBrain.swift */; };
 		653D1B99299010CA00808474 /* ResultsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 653D1B98299010CA00808474 /* ResultsViewController.swift */; };
