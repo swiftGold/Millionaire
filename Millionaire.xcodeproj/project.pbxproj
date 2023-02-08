@@ -23,6 +23,8 @@
 		54F0F8BB298FA7E1006ECBC5 /* MainGameBrain.swift in Sources */ = {isa = PBXBuildFile; fileRef = 54F0F8BA298FA7E1006ECBC5 /* MainGameBrain.swift */; };
 		54F0F8BE298FAA2E006ECBC5 /* GameRulesController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 54F0F8BD298FAA2E006ECBC5 /* GameRulesController.swift */; };
 		54F0F8C0298FCBE5006ECBC5 /* QuestionsViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 54F0F8BF298FCBE5006ECBC5 /* QuestionsViewModel.swift */; };
+		56C488292993FA5300432046 /* LooseViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 56C488282993FA5300432046 /* LooseViewController.swift */; };
+		56C4882C29940D5000432046 /* LoseBrain.swift in Sources */ = {isa = PBXBuildFile; fileRef = 56C4882B29940D5000432046 /* LoseBrain.swift */; };
 		653D1B99299010CA00808474 /* ResultsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 653D1B98299010CA00808474 /* ResultsViewController.swift */; };
 		6559943A29926959000D159B /* Labels.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6559943929926959000D159B /* Labels.swift */; };
 		6559943C29926A56000D159B /* LabelBrain.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6559943B29926A56000D159B /* LabelBrain.swift */; };
@@ -49,6 +51,8 @@
 		54F0F8BA298FA7E1006ECBC5 /* MainGameBrain.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainGameBrain.swift; sourceTree = "<group>"; };
 		54F0F8BD298FAA2E006ECBC5 /* GameRulesController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameRulesController.swift; sourceTree = "<group>"; };
 		54F0F8BF298FCBE5006ECBC5 /* QuestionsViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QuestionsViewModel.swift; sourceTree = "<group>"; };
+		56C488282993FA5300432046 /* LooseViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LooseViewController.swift; sourceTree = "<group>"; };
+		56C4882B29940D5000432046 /* LoseBrain.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoseBrain.swift; sourceTree = "<group>"; };
 		653D1B98299010CA00808474 /* ResultsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ResultsViewController.swift; sourceTree = "<group>"; };
 		6559943929926959000D159B /* Labels.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Labels.swift; sourceTree = "<group>"; };
 		6559943B29926A56000D159B /* LabelBrain.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LabelBrain.swift; sourceTree = "<group>"; };
@@ -235,6 +239,7 @@
 		54F65104299126C700FF6A73 /* Lose  */ = {
 			isa = PBXGroup;
 			children = (
+				56C4882A29940D3B00432046 /* Model */,
 				54F651092991271900FF6A73 /* Controllers */,
 			);
 			path = "Lose ";
@@ -243,6 +248,7 @@
 		54F651092991271900FF6A73 /* Controllers */ = {
 			isa = PBXGroup;
 			children = (
+				56C488282993FA5300432046 /* LooseViewController.swift */,
 			);
 			path = Controllers;
 			sourceTree = "<group>";
@@ -252,6 +258,14 @@
 			children = (
 			);
 			path = Controllers;
+			sourceTree = "<group>";
+		};
+		56C4882A29940D3B00432046 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				56C4882B29940D5000432046 /* LoseBrain.swift */,
+			);
+			path = Model;
 			sourceTree = "<group>";
 		};
 		653D1B902990095800808474 /* ResultsModule */ = {
@@ -369,9 +383,11 @@
 				54F0F8BB298FA7E1006ECBC5 /* MainGameBrain.swift in Sources */,
 				54F0F8B9298FA6CE006ECBC5 /* StartBrain.swift in Sources */,
 				6559943C29926A56000D159B /* LabelBrain.swift in Sources */,
+				56C488292993FA5300432046 /* LooseViewController.swift in Sources */,
 				65C6585229914BE1009BA0DD /* ProgressCollectionViewCell.swift in Sources */,
 				54F0F893298F9230006ECBC5 /* AppDelegate.swift in Sources */,
 				5478151C29935EA300A9C7A5 /* HallHelpViewController.swift in Sources */,
+				56C4882C29940D5000432046 /* LoseBrain.swift in Sources */,
 				54F0F895298F9230006ECBC5 /* SceneDelegate.swift in Sources */,
 				54F0F8BE298FAA2E006ECBC5 /* GameRulesController.swift in Sources */,
 				6559943A29926959000D159B /* Labels.swift in Sources */,
