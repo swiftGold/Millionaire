@@ -30,6 +30,7 @@
 		6559943C29926A56000D159B /* LabelBrain.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6559943B29926A56000D159B /* LabelBrain.swift */; };
 		65AE5C8E29912C5E003E72BB /* ProgressView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 65AE5C8D29912C5E003E72BB /* ProgressView.swift */; };
 		65C6585229914BE1009BA0DD /* ProgressCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 65C6585129914BE1009BA0DD /* ProgressCollectionViewCell.swift */; };
+		957E28AC29941EEB009E4423 /* Rules.swift in Sources */ = {isa = PBXBuildFile; fileRef = 957E28AB29941EEB009E4423 /* Rules.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -59,6 +60,7 @@
 		655994432992BC26000D159B /* correсt answer.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "correсt answer.mp3"; sourceTree = "<group>"; };
 		65AE5C8D29912C5E003E72BB /* ProgressView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProgressView.swift; sourceTree = "<group>"; };
 		65C6585129914BE1009BA0DD /* ProgressCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProgressCollectionViewCell.swift; sourceTree = "<group>"; };
+		957E28AB29941EEB009E4423 /* Rules.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Rules.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -181,6 +183,7 @@
 		54F0F8BC298FAA0E006ECBC5 /* GameRules */ = {
 			isa = PBXGroup;
 			children = (
+				957E28AA29941EA3009E4423 /* Models */,
 				54F30A11298FF01B0083A75C /* Controllers */,
 			);
 			path = GameRules;
@@ -304,6 +307,14 @@
 			name = Controllers;
 			sourceTree = "<group>";
 		};
+		957E28AA29941EA3009E4423 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				957E28AB29941EEB009E4423 /* Rules.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -385,6 +396,7 @@
 				6559943C29926A56000D159B /* LabelBrain.swift in Sources */,
 				56C488292993FA5300432046 /* LooseViewController.swift in Sources */,
 				65C6585229914BE1009BA0DD /* ProgressCollectionViewCell.swift in Sources */,
+				957E28AC29941EEB009E4423 /* Rules.swift in Sources */,
 				54F0F893298F9230006ECBC5 /* AppDelegate.swift in Sources */,
 				5478151C29935EA300A9C7A5 /* HallHelpViewController.swift in Sources */,
 				56C4882C29940D5000432046 /* LoseBrain.swift in Sources */,

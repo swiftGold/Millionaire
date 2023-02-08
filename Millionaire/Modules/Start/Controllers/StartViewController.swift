@@ -67,7 +67,7 @@ class StartViewController: UIViewController {
     
     @objc
     private func didTapRulesButton() {
-        let viewController = MainGameViewController()
+        let viewController = GameRulesController()
         viewController.modalPresentationStyle = .fullScreen
         present(viewController, animated: false)
     }
