@@ -62,8 +62,9 @@ class ResultsViewController: UIViewController {
         }
         
         @objc private func viewTaps() {
-            print("next view")
-        }
+            let viewController = MainGameViewController()
+            viewController.modalPresentationStyle = .fullScreen
+            present(viewController, animated: false)        }
     
 
     private func setupViews() {

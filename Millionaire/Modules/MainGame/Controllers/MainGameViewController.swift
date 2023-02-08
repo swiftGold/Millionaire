@@ -83,6 +83,7 @@ class MainGameViewController: UIViewController {
                                               left: 100,
                                               bottom: 0,
                                               right: 0)
+        button.tag = 1
         return button
     }()
     
@@ -106,6 +107,7 @@ class MainGameViewController: UIViewController {
                                               left: 100,
                                               bottom: 0,
                                               right: 0)
+        button.tag = 2
         return button
     }()
     
@@ -129,6 +131,7 @@ class MainGameViewController: UIViewController {
                                               left: 100,
                                               bottom: 0,
                                               right: 0)
+        button.tag = 3
         return button
     }()
     
@@ -152,6 +155,7 @@ class MainGameViewController: UIViewController {
                                               left: 100,
                                               bottom: 0,
                                               right: 0)
+        button.tag = 4
         return button
     }()
     
@@ -165,7 +169,7 @@ class MainGameViewController: UIViewController {
         let button = UIButton(type: .custom)
         button.setImage(UIImage(named: "fiftyFifty"), for: .normal)
         button.clipsToBounds = true
-        button.addTarget(self, action: #selector(didTapPromptButton), for: .touchUpInside)
+        button.addTarget(self, action: #selector(didTapFiftyFiftyButton), for: .touchUpInside)
         button.translatesAutoresizingMaskIntoConstraints = false
         return button
     }()
@@ -174,7 +178,7 @@ class MainGameViewController: UIViewController {
         let button = UIButton(type: .custom)
         button.setImage(UIImage(named: "hallHelp"), for: .normal)
         button.clipsToBounds = true
-        button.addTarget(self, action: #selector(didTapPromptButton), for: .touchUpInside)
+        button.addTarget(self, action: #selector(didTapHallHelpButton), for: .touchUpInside)
         button.translatesAutoresizingMaskIntoConstraints = false
         return button
     }()
@@ -183,7 +187,7 @@ class MainGameViewController: UIViewController {
         let button = UIButton(type: .custom)
         button.setImage(UIImage(named: "callToFriend"), for: .normal)
         button.clipsToBounds = true
-        button.addTarget(self, action: #selector(didTapPromptButton), for: .touchUpInside)
+        button.addTarget(self, action: #selector(didTapCallToFriendButton), for: .touchUpInside)
         button.translatesAutoresizingMaskIntoConstraints = false
         return button
     }()
@@ -234,23 +238,86 @@ class MainGameViewController: UIViewController {
         return stackView
     }()
     
+    var mainGameBrain = MainGameBrain()
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         setupViewController()
     }
     
     @objc
-    private func didTapAnswerButton() {
-        print(#function)
+    private func didTapAnswerButton(_ sender: UIButton) {
+        let userAnswer = sender.tag
+        let userGotItRight = mainGameBrain.checkAnswer(userAnswer: String(userAnswer))
+        
+        if userGotItRight {
+            sender.backgroundColor = UIColor.green
+        } else {
+            sender.backgroundColor = UIColor.red
+        }
+        
+        mainGameBrain.nextQuestion()
+        DispatchQueue.main.asyncAfter(deadline: .now() + 0.2) { [weak self] in
+            self?.updateUI()
+        }
     }
     
     @objc
-    private func didTapPromptButton() {
-        print(#function)
+    private func didTapFiftyFiftyButton(_ sender: UIButton) {
+            
+        fiftyFifty()
+        sender.setImage(UIImage(named: "redCrossFiftyFifty"), for: .normal)
+        sender.isEnabled = false
+    }
+    
+    @objc
+    private func didTapHallHelpButton(_ sender: UIButton) {
+        
+        mainGameBrain.hallHelpValues()
+        guard let hallHelp = mainGameBrain.hallHelp else { fatalError() }
+        
+        sender.setImage(UIImage(named: "redCrossHallHelp"), for: .normal)
+        sender.isEnabled = false
+            
+        let viewController = HallHelpViewController()
+        viewController.setupHallHelp(with: hallHelp)
+        present(viewController, animated: true)
+    }
+    
+    @objc
+    private func didTapCallToFriendButton(_ sender: UIButton) {
+        
     }
 }
 
 private extension MainGameViewController {
+    func fiftyFifty() {
+        let twoNumberArray = mainGameBrain.fiftyFifty()
+        let buttonsArray: [UIButton] = [answerAButton, answerBButton, answerCButton, answerDButton]
+                    
+        buttonsArray.forEach { element in
+            if element.tag == twoNumberArray[0] || element.tag == twoNumberArray[1] {
+                element.setTitle("", for: .normal)
+            }
+        }
+    }
+    
+    func updateUI() {
+        questionLabel.text = mainGameBrain.getQuestionText()
+        
+        answerAButton.backgroundColor = UIColor.clear
+        answerAButton.setTitle(mainGameBrain.getButtonTitle(with: 0), for: .normal)
+        
+        answerBButton.backgroundColor = UIColor.clear
+        answerBButton.setTitle(mainGameBrain.getButtonTitle(with: 1), for: .normal)
+
+        answerCButton.backgroundColor = UIColor.clear
+        answerCButton.setTitle(mainGameBrain.getButtonTitle(with: 2), for: .normal)
+        
+        answerDButton.backgroundColor = UIColor.clear
+        answerDButton.setTitle(mainGameBrain.getButtonTitle(with: 3), for: .normal)
+    }
+    
     func setupViewController() {
         addSubviews()
         setConstraints()

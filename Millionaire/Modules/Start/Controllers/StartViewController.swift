@@ -74,7 +74,7 @@ class StartViewController: UIViewController {
     
     @objc
     private func didTapStartButton() {
-        let viewController = MainGameViewController()
+        let viewController = ResultsViewController()
         viewController.modalPresentationStyle = .fullScreen
         present(viewController, animated: false)
     }
