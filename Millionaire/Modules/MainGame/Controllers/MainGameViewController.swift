@@ -72,7 +72,7 @@ class MainGameViewController: UIViewController {
         button.translatesAutoresizingMaskIntoConstraints = false
         button.setImage(UIImage(systemName: "a.circle"), for: .normal)
         button.tintColor = .white
-        button.setTitle("answer A", for: .normal)
+        button.setTitle("", for: .normal)
         button.setTitleColor(.white, for: .normal)
         button.titleLabel?.font = UIFont.systemFont(ofSize: 24)
         button.imageEdgeInsets = UIEdgeInsets(top: 0,
@@ -96,7 +96,7 @@ class MainGameViewController: UIViewController {
         button.translatesAutoresizingMaskIntoConstraints = false
         button.setImage(UIImage(systemName: "b.circle"), for: .normal)
         button.tintColor = .white
-        button.setTitle("answer B", for: .normal)
+        button.setTitle("", for: .normal)
         button.setTitleColor(.white, for: .normal)
         button.titleLabel?.font = UIFont.systemFont(ofSize: 24)
         button.imageEdgeInsets = UIEdgeInsets(top: 0,
@@ -120,7 +120,7 @@ class MainGameViewController: UIViewController {
         button.translatesAutoresizingMaskIntoConstraints = false
         button.setImage(UIImage(systemName: "c.circle"), for: .normal)
         button.tintColor = .white
-        button.setTitle("answer C", for: .normal)
+        button.setTitle("", for: .normal)
         button.setTitleColor(.white, for: .normal)
         button.titleLabel?.font = UIFont.systemFont(ofSize: 24)
         button.imageEdgeInsets = UIEdgeInsets(top: 0,
@@ -144,7 +144,7 @@ class MainGameViewController: UIViewController {
         button.translatesAutoresizingMaskIntoConstraints = false
         button.setImage(UIImage(systemName: "d.circle"), for: .normal)
         button.tintColor = .white
-        button.setTitle("answer D", for: .normal)
+        button.setTitle("", for: .normal)
         button.setTitleColor(.white, for: .normal)
         button.titleLabel?.font = UIFont.systemFont(ofSize: 24)
         button.imageEdgeInsets = UIEdgeInsets(top: 0,
@@ -243,6 +243,7 @@ class MainGameViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         setupViewController()
+        updateUI()
     }
     
     @objc
