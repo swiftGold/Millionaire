@@ -6,6 +6,7 @@
 //
 
 import UIKit
+import AVFoundation
 
 class TimerView: UIView {
     
@@ -22,10 +23,10 @@ class TimerView: UIView {
     private var timer = Timer()
     private var timerSec = 30
     private var timerFlag = true
+    var player: AVAudioPlayer!
     
     override init(frame: CGRect) {
         super.init(frame: frame)
-        
         setupView()
         setConstraints()
     }
@@ -45,18 +46,23 @@ class TimerView: UIView {
             timerImageView.image = UIImage(named: timerImages[timerSec])
         } else {
             timerFlag = false
+            player.stop()
             timer.invalidate()
         }
     }
     
     func timerStart() -> Bool {
-        timer = Timer.scheduledTimer(withTimeInterval: 0.1, repeats: true, block: { _ in
+        let url = Bundle.main.url(forResource: "watch", withExtension: "mp3")
+        player = try! AVAudioPlayer(contentsOf: url!)
+        player.play()
+        timer = Timer.scheduledTimer(withTimeInterval: 1, repeats: true, block: { _ in
             self.timerOn()
         })
         return timerFlag
     }
     
     func timerPause() {
+        player.stop()
         timer.invalidate()
     }
     

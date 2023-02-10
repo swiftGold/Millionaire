@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		16B863D82995F63D005AEF40 /* TimerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 16B863D72995F63D005AEF40 /* TimerView.swift */; };
+		16B863FC29961565005AEF40 /* watch.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 16B863FB29961565005AEF40 /* watch.mp3 */; };
 		547815122992D2B100A9C7A5 /* wait result.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 547815112992D2B100A9C7A5 /* wait result.mp3 */; };
 		547815142992D2C400A9C7A5 /* wrong answer.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 547815132992D2C400A9C7A5 /* wrong answer.mp3 */; };
 		5478151629935C5900A9C7A5 /* HallHelpModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5478151529935C5900A9C7A5 /* HallHelpModel.swift */; };
@@ -36,6 +37,7 @@
 
 /* Begin PBXFileReference section */
 		16B863D72995F63D005AEF40 /* TimerView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TimerView.swift; sourceTree = "<group>"; };
+		16B863FB29961565005AEF40 /* watch.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = watch.mp3; sourceTree = "<group>"; };
 		547815112992D2B100A9C7A5 /* wait result.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "wait result.mp3"; sourceTree = "<group>"; };
 		547815132992D2C400A9C7A5 /* wrong answer.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "wrong answer.mp3"; sourceTree = "<group>"; };
 		5478151529935C5900A9C7A5 /* HallHelpModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HallHelpModel.swift; sourceTree = "<group>"; };
@@ -175,6 +177,7 @@
 		54F0F8AF298F9658006ECBC5 /* Extensions */ = {
 			isa = PBXGroup;
 			children = (
+				16B863FB29961565005AEF40 /* watch.mp3 */,
 				655994432992BC26000D159B /* correсt answer.mp3 */,
 				547815112992D2B100A9C7A5 /* wait result.mp3 */,
 				547815132992D2C400A9C7A5 /* wrong answer.mp3 */,
@@ -376,6 +379,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				16B863FC29961565005AEF40 /* watch.mp3 in Resources */,
 				54F0F89F298F9233006ECBC5 /* LaunchScreen.storyboard in Resources */,
 				547815122992D2B100A9C7A5 /* wait result.mp3 in Resources */,
 				54F0F89C298F9233006ECBC5 /* Assets.xcassets in Resources */,
