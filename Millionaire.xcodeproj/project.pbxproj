@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		16B863D82995F63D005AEF40 /* TimerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 16B863D72995F63D005AEF40 /* TimerView.swift */; };
 		547815122992D2B100A9C7A5 /* wait result.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 547815112992D2B100A9C7A5 /* wait result.mp3 */; };
 		547815142992D2C400A9C7A5 /* wrong answer.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 547815132992D2C400A9C7A5 /* wrong answer.mp3 */; };
 		5478151629935C5900A9C7A5 /* HallHelpModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5478151529935C5900A9C7A5 /* HallHelpModel.swift */; };
@@ -34,6 +35,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		16B863D72995F63D005AEF40 /* TimerView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TimerView.swift; sourceTree = "<group>"; };
 		547815112992D2B100A9C7A5 /* wait result.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "wait result.mp3"; sourceTree = "<group>"; };
 		547815132992D2C400A9C7A5 /* wrong answer.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "wrong answer.mp3"; sourceTree = "<group>"; };
 		5478151529935C5900A9C7A5 /* HallHelpModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HallHelpModel.swift; sourceTree = "<group>"; };
@@ -139,6 +141,7 @@
 				54F0F8BC298FAA0E006ECBC5 /* GameRules */,
 				54F651032991263400FF6A73 /* Progress */,
 				54F65104299126C700FF6A73 /* Lose  */,
+				16B863D72995F63D005AEF40 /* TimerView.swift */,
 			);
 			path = Modules;
 			sourceTree = "<group>";
@@ -396,6 +399,7 @@
 				6559943C29926A56000D159B /* LabelBrain.swift in Sources */,
 				56C488292993FA5300432046 /* LooseViewController.swift in Sources */,
 				65C6585229914BE1009BA0DD /* ProgressCollectionViewCell.swift in Sources */,
+				16B863D82995F63D005AEF40 /* TimerView.swift in Sources */,
 				957E28AC29941EEB009E4423 /* Rules.swift in Sources */,
 				54F0F893298F9230006ECBC5 /* AppDelegate.swift in Sources */,
 				5478151C29935EA300A9C7A5 /* HallHelpViewController.swift in Sources */,
